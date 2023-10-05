@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bonsai Clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="container mx-auto">
+    <h1
+      class="heading-1 text-center mb-8 text-green-dark max-w-[640px] mx-auto"
+    >
+      Pick the best plan for your business
+    </h1>
+
+    <!-- Rounded switch -->
+    <div
+      id="toggle"
+      class="bg-green-light cursor-pointer w-80 h-16 max-w-full rounded-full flex justify-between items-center mx-auto py-1.5 pr-6 pl-9 mb-16 lg:mb-32 relative"
+    >
+      <div
+        id="toggle-inner"
+        class="rounded-full absolute w-[115px] h-[52px] bg-green-dark top-auto left-[6px] bottom-[6px]"
+      ></div>
+
+      <div id="monthly" class="z-10 text-white relative text-sm">Monthly</div>
+
+      <div id="yearly" class="gap-x-[6px] gap-y-[6px] flex items-center">
+        <div id="yearly-text" class="text-sm z-10 relative">Yearly</div>
+        <div class="bg-white rounded-full px-3 py-1 z-10 relative">
+          <div class="text-green-bright text-[10px] font-bold">
+            2 months <span class="hidden md:inline-block">for</span> free
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div>
+      <!-- Monthly -->
+      <div
+        id="price-monthly"
+        class="flex gap-10 lg:gap-5 justify-center items-center flex-col lg:flex-row mx-auto will-change-opacity"
+      >
+        <div class="max-w-[560px] w-full">
+          <div
+            class="h-full relative shadow-[0_0_20px_rgba(0,0,0,.1)] rounded-2xl"
+          >
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Starter
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">25</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                Ideal for freelancers and contractors just starting out.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[560px] w-full mt-6 lg:mt-0">
+          <div class="h-full relative mt-6 lg:mt-0">
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Professional
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">39</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                Everything a growing independent business needs to thrive.
+              </p>
+            </div>
+
+            <div
+              class="bg-orangeish -z-10 w-[104%] h-[120%] py-[5px] px-[6px] absolute -top-[17.5%] -left-[2%] rounded-[20px]"
+            >
+              <div
+                class="text-[14px] leading-[125%] text-white text-center absolute inset-0 top-[1.3rem]"
+              >
+                Most Popular
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[560px] w-full">
+          <div
+            class="h-full relative shadow-[0_0_20px_rgba(0,0,0,.1)] rounded-2xl"
+          >
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Business
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">79</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                The perfect package for small businesses and agencies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yearly -->
+      <div
+        id="price-yearly"
+        style="display: none; opacity: 0"
+        class="gap-10 lg:gap-5 justify-center items-center flex-col lg:flex-row mx-auto will-change-opacity"
+      >
+        <div class="max-w-[560px] w-full">
+          <div
+            class="h-full relative shadow-[0_0_20px_rgba(0,0,0,.1)] rounded-2xl"
+          >
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Starter
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">21</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                Ideal for freelancers and contractors just starting out.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[560px] w-full mt-6 lg:mt-0">
+          <div class="h-full relative mt-6 lg:mt-0">
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Professional
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">35</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                Everything a growing independent business needs to thrive.
+              </p>
+            </div>
+
+            <div
+              class="bg-orangeish -z-10 w-[104%] h-[120%] py-[5px] px-[6px] absolute -top-[17.5%] -left-[2%] rounded-[20px]"
+            >
+              <div
+                class="text-[14px] leading-[125%] text-white text-center absolute inset-0 top-[1.3rem]"
+              >
+                Best value for money
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[560px] w-full">
+          <div
+            class="h-full relative shadow-[0_0_20px_rgba(0,0,0,.1)] rounded-2xl"
+          >
+            <div
+              class="p-7 pb-10 h-full flex flex-col justify-between items-center bg-white overflow-hidden rounded-2xl"
+            >
+              <h2 class="text-4xl font-bold my-4 text-center text-green-dark">
+                Business
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-1 text-2xl font-bold"
+              >
+                <div class="text-green-dark">$</div>
+                <div class="text-green-bright text-[30px]">66</div>
+                <div class="text-grey-green">/month</div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-6 px-6 py-4 rounded-full bg-green-bright text-white hover:bg-opacity-90"
+              >
+                Start for free
+              </button>
+
+              <p
+                class="text-gray-500 text-[14px] mt-6 max-w-[260px] mx-auto text-center"
+              >
+                The perfect package for small businesses and agencies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <h1
+      class="heading-1 text-left mb-8 text-green-dark max-w-[640px] ml-0 mt-20"
+    >
+      Frequently asked questions
+    </h1>
+
+    <div id="accordion-wrapper" class="mt-10 flex flex-col divide-y">
+      <div class="accordion-item">
+        <div class="accordion-trigger flex justify-between items-center py-6 cursor-pointer">
+          <h3 class="text-[20px] text-green-dark font-bold">
+            How does the free trial work?
+          </h3>
+          <div class="accordion-icon w-[18px] h-[11px] text-green-bright"
+          style="transform-style: preserve-3d;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none">
+              <path d="M1.00001 0.99989L8.71814 8.71802L16.4363 0.99989" stroke="currentColor" stroke-width="2"/>
+            </svg>            
+          </div>
+        </div>
+        <div
+          class="accordion-item-content overflow-hidden h-full"
+          style="max-width: 640px; max-height: 0px; transform-origin: top"
+        >
+          <p class="mb-4 text-base text-green-dark">
+            When you start your trial with Bonsai you'll receive full, unlimited
+            access to the plan you chose. You will need to enter your credit
+            card information to begin your trial, but don't worry - we won't
+            charge you anything until the trial ends. You can cancel at any time
+            during the trial period via your Subscriptions settings.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-trigger flex justify-between py-6 cursor-pointer">
+          <h3 class="text-[20px] text-green-dark font-bold">
+            Can I change my plan anytime?
+          </h3>
+          <div class="accordion-icon w-[18px] h-[11px] text-green-bright"
+          style="transform-style: preserve-3d;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none">
+              <path d="M1.00001 0.99989L8.71814 8.71802L16.4363 0.99989" stroke="currentColor" stroke-width="2"/>
+            </svg>            
+          </div>
+        </div>
+        <div
+          class="accordion-item-content overflow-hidden h-full"
+          style="max-width: 640px; max-height: 0px; transform-origin: top"
+        >
+          <p class="mb-4 text-green-dark">
+            Yes, you can upgrade, downgrade or cancel your plan at any time via your Subscription settings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
